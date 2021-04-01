@@ -4,6 +4,8 @@ import { } from "module";
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 import Footer from './components/Footer'
+import Weather from './components/Weather'
+import Time from './components/Time'
 
 function App() {
   const [inputText, setInputText] = useState('');
@@ -57,8 +59,11 @@ function App() {
 
   return (
     <div className="App">
+      <Weather />
+      
+      <Time />
       <header>
-        <h1>Your Todo List</h1>
+        <h1>Your To-Do List</h1>
       </header>
       <Form
         inputText={inputText}
