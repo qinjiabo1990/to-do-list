@@ -11,7 +11,7 @@ function DemoFooter() {
         <Row>
           <div className={classes.right}>
             <span>
-              © {new Date().getFullYear()}, Bob's Todo List
+              © {new Date().getFullYear()}, Bob's Todo List App
             </span>
           </div>
         </Row>
