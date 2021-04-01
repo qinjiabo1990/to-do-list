@@ -2,7 +2,7 @@ import React from 'react';
 import Todo from './Todo';
 
 const TodoList = (props) => {
-  console.log(props.output)
+  //console.log(props.output)
   return (<div className="todo-container">
     <ul className="todo-list">
       {props.filteredTodos.map((e) => (
