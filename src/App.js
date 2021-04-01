@@ -3,6 +3,7 @@ import './App.css';
 import { } from "module";
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import Footer from './components/Footer'
 
 function App() {
   const [inputText, setInputText] = useState('');
@@ -72,7 +73,9 @@ function App() {
         output={todos}
         filteredTodos={filteredTodos}
       />
+      <Footer />
     </div>
+    
   );
 }
 
