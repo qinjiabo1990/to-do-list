@@ -61,32 +61,9 @@ const Weather = () => {
                                 <i className="fas fa-map-marker-alt"></i>{' '}
                                 <strong>{apiData.name}</strong>
                             </p>
-
-                            {/* <div className="row mt-4">
-                                <div className="col-md-6">
-                                    <p>
-                                        <i className="fas fa-temperature-low "></i>{' '}
-                                        <strong>
-                                            {kelvinToFarenheit(apiData.main.temp_min)}&deg; C
-                  </strong>
-                                    </p>
-                                    <p>
-                                        <i classNameName="fas fa-temperature-high"></i>{' '}
-                                        <strong>
-                                            {kelvinToFarenheit(apiData.main.temp_max)}&deg; C
-                  </strong>
-                                    </p>
-                                </div>
-                                <div classNameName="col-md-6">
-                                    <p>
-                                        {' '}
-                                        <strong>{apiData.weather[0].main}</strong>
-                                    </p>
-                                </div>
-                            </div> */}
                         </div>
                     ) : (
-                        <h1>Loading</h1>
+                        <h1>Loading Weather...</h1>
                     )}
                 </div>
             </div>

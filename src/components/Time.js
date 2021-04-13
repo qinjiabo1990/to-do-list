@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './Time.module.css'
 
 const Time = () => {
-    const time = new Date();
-    let minute = null;
-    if(time.getMinutes()<10){
-        minute = '0' + time.getMinutes()
-    }else{
-        minute = time.getMinutes()
-    }
+    const [value, setValue] = useState(new Date().toLocaleTimeString());
+    
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setValue(new Date().toLocaleTimeString());
+        }, 1000);
+        // clearing interval
+        return () => clearInterval(timer);
+    });
 
     return (
         <>
-        <div className={classes.time}>
-            <p>{time.getHours()} : {minute}</p>
-        </div>
-        <div className={classes.date}>
-        <p>{time.getDate()} / {time.getMonth()+1} / {time.getFullYear()}</p>
-        </div>
+            <div className={classes.time}>
+                <p>{value}</p>
+            </div>
         </>
     );
 }
