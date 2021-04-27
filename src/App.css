@@ -5,6 +5,8 @@
 body {
   background-image: url(./assets/img/bg.jpg);
   color: #1d1e4e;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
 }
 
@@ -50,7 +52,7 @@ form button {
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ffe169;
+  background: #1d1e4e;
   color: white;
 }
 
@@ -73,7 +75,7 @@ form button:hover {
   margin: 0.5rem;
   background: transparent;
   font-size: 1.2rem;
-  color: #e4e4ee;
+  color: #37373a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,17 +132,17 @@ select {
 
 /* Custom Select */
 .select {
-  margin: 1rem;
+  margin: 1rem 0;
   position: relative;
   overflow: hidden;
-  text-align: center;
+  
 }
 select {
   color: #1d1e4e;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
-  width: 40%;
+  width: 25%;
 }
 /* Arrow */
 .select::after {
@@ -151,5 +153,5 @@ select {
   pointer-events: none;
   position: absolute;
   top: 0;
-  right: 30%;
+  left: 22%;
 }

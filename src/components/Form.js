@@ -33,9 +33,9 @@ const Form = (props) => {
             <hr />
             <div className="select">
                 <select onChange={statusHandler} name="todos" className="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
+                    <option value="all">All Tasks</option>
+                    <option value="completed">Completed Tasks</option>
+                    <option value="uncompleted">Uncompleted Tasks</option>
                 </select>
             </div>
         </form>
