@@ -4,7 +4,7 @@
 
 body {
   background-image: url(./assets/img/bg.jpg);
-  color: rgb(29, 28, 28);
+  color: #1d1e4e;
   font-family: "Poppins", sans-serif;
 }
 
@@ -45,12 +45,12 @@ form button {
 }
 
 form button {
-  color: #ca5838;
+  color: #1d1e4e;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: #ffe169;
   color: white;
 }
 
@@ -73,7 +73,7 @@ form button:hover {
   margin: 0.5rem;
   background: transparent;
   font-size: 1.2rem;
-  color: rgb(31, 28, 28);
+  color: #e4e4ee;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,7 +88,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  color: #ca5838;
+  color: #1d1e4e;
   border: none;
   padding: 1rem;
   cursor: pointer;
@@ -136,7 +136,7 @@ select {
   text-align: center;
 }
 select {
-  color: #ca5838;
+  color: #1d1e4e;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
@@ -145,7 +145,7 @@ select {
 /* Arrow */
 .select::after {
   content: "\25BC";
-  color: #ca5838;
+  color: #1d1e4e;
   padding: 1rem;
   cursor: pointer;
   pointer-events: none;
