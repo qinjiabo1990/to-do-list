@@ -1,6 +1,5 @@
 .location{
-    text-align: right;
-    margin-top: 1%;
-    margin-right: 2%;
-    position: relative;
+    font-size: 15px;
+    text-align: center;
+    line-height: 0px;
 }

@@ -52,10 +52,9 @@ const Weather = () => {
                                 alt="weather status icon"
                                 className="weather-icon"
                             />
-
                             <p className="h2">
                                 {kelvinToFarenheit(apiData.main.temp)}&deg; C
-            </p>
+                            </p>
 
                             <p className="h5">
                                 <i className="fas fa-map-marker-alt"></i>{' '}

@@ -15,7 +15,7 @@ function App() {
   const [filteredTodos, setFilteredTodos] = useState([]);
 
   //////////////////////////////////////////////////////////////////////////////
-  //RUN ONCE when the app start
+  //Run once the app start
   useEffect(()=>{
     getLocalTodos();
   },[]);
@@ -59,12 +59,12 @@ function App() {
 
   return (
     <div className="App">
-      <Weather />
-      
-      <Time />
-      <header>
-        <h1>Your To-Do List</h1>
+       <header>
+        <p>TODO-LIST</p>
+        <Time />
+        <Weather />
       </header>
+     
       <Form
         inputText={inputText}
         todoContent={todos}
@@ -72,11 +72,13 @@ function App() {
         input={setInputText}
         setStatus={setStatus}
       />
+
       <TodoList
         setTodos={setTodos}
         output={todos}
         filteredTodos={filteredTodos}
       />
+
       <Footer />
     </div>
     

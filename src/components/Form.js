@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 
 const Form = (props) => {
     const inputTextHandler = (e) => {
-        //console.log(e.target.value);
         props.input(e.target.value);
     }
 
@@ -16,19 +15,22 @@ const Form = (props) => {
     }
 
     const statusHandler = (e) => {
-        props.setStatus(e.target.value) 
+        props.setStatus(e.target.value)
     }
 
     return (
         <form>
-            <input
-                value={props.inputText}
-                onChange={inputTextHandler}
-                type="text" 
-                className="todo-input" />
-            <button onClick={submitToDoHandler} className="todo-button" type="submit">
-                <i className="fas fa-plus-square"></i>
-            </button>
+            <div className="todo-input">
+                <input
+                    value={props.inputText}
+                    onChange={inputTextHandler}
+                    placeholder="Enter New To-Do"
+                    type="text"/>
+                <button onClick={submitToDoHandler} className="todo-button" type="submit">
+                    <i className="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <hr />
             <div className="select">
                 <select onChange={statusHandler} name="todos" className="filter-todo">
                     <option value="all">All</option>
@@ -39,7 +41,5 @@ const Form = (props) => {
         </form>
     )
 }
-
-
 
 export default Form;
